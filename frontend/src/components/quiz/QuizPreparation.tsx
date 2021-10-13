@@ -46,7 +46,6 @@ const QuizPreparation: React.FunctionComponent = (): JSX.Element => {
       .getAllPatients(currentUser.uid)
       .then((response) => {
         setListOfPatients(response.data);
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);

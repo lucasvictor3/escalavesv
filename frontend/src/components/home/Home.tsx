@@ -207,9 +207,8 @@ const Home: React.FunctionComponent = (): JSX.Element => {
               size="large"
               value={contact.name}
               onChange={(e) => {
-                console.log(e.currentTarget.value);
-                let teste = { ...contact, name: e.currentTarget.value };
-                setContact(teste);
+                let newName = { ...contact, name: e.currentTarget.value };
+                setContact(newName);
               }}
               prefix={<UserOutlined />}
             />

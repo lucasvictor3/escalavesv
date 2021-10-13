@@ -17,7 +17,7 @@ evaluationRouter.post("/", validateToken, async (req, res) => {
     targetUserId
   );
 
-  console.log("REGISTER EVALUATION:", response);
+  logger.info({ "REGISTER EVALUATION:": response });
 
   res.status(200).send(response);
 });
@@ -39,7 +39,7 @@ evaluationRouter.put("/", validateToken, async (req, res) => {
     isResponsesFilled
   );
 
-  console.log("UPDATE EVALUATION:", response);
+  logger.info({ "UPDATE EVALUATION:": response });
 
   res.status(200).send(response);
 });
@@ -58,8 +58,7 @@ evaluationRouter.get(
       dateState
     );
 
-    logger.info(response);
-    console.log("GET EVALUATION:", response);
+    logger.info({ "GET EVALUATION:": response });
 
     if (response === null) {
       res.sendStatus(404);
@@ -85,8 +84,7 @@ evaluationRouter.get(
       finishedEvaluationsOnly
     );
 
-    logger.info(response);
-    console.log("ALL EVALUATION:", response);
+    logger.info({ "ALL EVALUATION:": response });
 
     if (response === null) {
       res.sendStatus(404);

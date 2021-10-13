@@ -27,7 +27,6 @@ const WelcomePage: React.FunctionComponent = (): JSX.Element => {
       .getUserInfo(currentUser.uid)
       .then((response: AxiosResponse) => {
         setLoggedUserInfo(response.data);
-        console.log(response.data);
       })
       .catch((err) => {});
     // eslint-disable-next-line react-hooks/exhaustive-deps

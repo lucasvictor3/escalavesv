@@ -36,7 +36,6 @@ const Login: React.FunctionComponent<
       .then((response) => {
         const user = response.user;
         if (user !== null && user.emailVerified) {
-          console.log(user);
           new UserService(user)
             .getUserInfo(user.uid)
             .then((response: AxiosResponse) => {
@@ -103,7 +102,6 @@ const Login: React.FunctionComponent<
             })
             .then((response) => {
               setLoggedUserInfo(response.data);
-              console.log(response.data);
               history.push('/welcome');
             })
             .catch((err) => {

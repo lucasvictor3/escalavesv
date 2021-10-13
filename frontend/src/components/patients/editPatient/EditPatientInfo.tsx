@@ -62,7 +62,6 @@ const EditPatientInfo: React.FunctionComponent = (): JSX.Element => {
       .getAllPatients(currentUser.uid)
       .then((response) => {
         setListOfPatients(response.data);
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -98,7 +97,6 @@ const EditPatientInfo: React.FunctionComponent = (): JSX.Element => {
         );
         return;
       }
-      console.log(patientName, selectedPatient.name);
       if (
         patientName === selectedPatient.name &&
         birthdayDate === selectedPatient.birthdayDate &&
@@ -127,7 +125,6 @@ const EditPatientInfo: React.FunctionComponent = (): JSX.Element => {
         })
         .then((response) => {
           setSelectedPatient(response.data);
-          console.log(response.data);
           message.success('Dados foram salvos com sucesso.', 4);
           setIsDisabled(false);
         })
@@ -158,7 +155,6 @@ const EditPatientInfo: React.FunctionComponent = (): JSX.Element => {
             placeholder="Digite para buscar"
             optionFilterProp="children"
             filterOption={(input, option) => {
-              console.log(option);
               return (
                 option!.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
               );

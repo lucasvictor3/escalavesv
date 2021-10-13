@@ -127,7 +127,6 @@ const Quiz: React.FunctionComponent<
     new UserService(currentUser)
       .registerNewEvaluation(currentUser.uid, location.state.patientId)
       .then((response: AxiosResponse<IEvaluation>) => {
-        console.log(response.data);
         setCurrenEvaluation(response.data);
         setResponses(response.data.responses ? response.data.responses : {});
         setQuestionIndex(
@@ -184,7 +183,6 @@ const Quiz: React.FunctionComponent<
   }, [sliderStep, questionIndex]);
 
   const handlePressKey = (e) => {
-    console.log(e, questionIndex);
 
     if (e.keyCode === 13) {
       // enter
@@ -192,7 +190,6 @@ const Quiz: React.FunctionComponent<
     } else if (e.keyCode === 8) {
       let newQuestionIndex = questionIndex - 1;
       setQuestionIndex(newQuestionIndex);
-      console.log(newQuestionIndex);
       if (newQuestionIndex < 0) {
         history.push('/quiz-preparation');
       }
@@ -200,7 +197,6 @@ const Quiz: React.FunctionComponent<
       // left arrow
       if (sliderStep === 0) return;
       setSliderStep(sliderStep - 1);
-      console.log(sliderStep);
     } else if (e.keyCode === 39) {
       // right arrow
       if (sliderStep === 4) return;

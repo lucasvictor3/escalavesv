@@ -73,7 +73,6 @@ const DisplayPatient: React.FunctionComponent = (): JSX.Element => {
       .getAllPatients(currentUser.uid)
       .then((response) => {
         setListOfPatients(response.data);
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -156,7 +155,6 @@ const DisplayPatient: React.FunctionComponent = (): JSX.Element => {
             placeholder="Digite para buscar"
             optionFilterProp="children"
             filterOption={(input, option) => {
-              console.log(option);
               return (
                 option!.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
               );
