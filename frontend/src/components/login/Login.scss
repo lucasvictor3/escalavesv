@@ -1,0 +1,71 @@
+.login-main {
+  height: 100vh;
+  display: flex;
+  background-color: rgba(206, 207, 214, 0.85);
+}
+
+.login-fields-box {
+  width: 20rem;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 18px;
+  @media screen and (max-width: 800px) {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0px;
+  }
+}
+
+.login-logo {
+  margin-left: 1.4rem;
+  @media screen and (max-width: 800px) {
+    margin: auto;
+  }
+}
+
+.login-logo-wrapper {
+  margin: auto;
+  width: fit-content;
+}
+
+.login-header {
+  width: fit-content;
+  margin: auto;
+}
+
+.forgot-password-phrase {
+  cursor: pointer;
+  text-decoration: solid;
+  color: black;
+  transition: 0.3s;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.forgot-password-phrase:hover {
+  color: rgb(78, 90, 131);
+}
+
+.login-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.google-login-button {
+  background-color: #5eabb3;
+  border-color: #5eabb3;
+}
+
+.google-login-button-wrapper {
+  width: fit-content;
+  margin: auto;
+}
+
+.login-button {
+  background-color: #5eabb3;
+  border-color: #5eabb3;
+}

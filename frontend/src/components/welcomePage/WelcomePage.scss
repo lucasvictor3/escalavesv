@@ -1,0 +1,109 @@
+.welcome-main {
+  height: 100vh;
+  background-color: rgba(206, 207, 214, 0.85);
+}
+
+.welcome-options-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.profile-wrapper {
+  width: 20vw;
+  margin-left: 10%;
+  @media screen and (max-width: 800px) {
+    margin-left: 0%;
+    width: 40vw;
+  }
+}
+
+.patient-wrapper {
+  width: 20vw;
+  margin-right: 10%;
+  @media screen and (max-width: 800px) {
+    margin-right: 0%;
+    width: 40vw;
+  }
+}
+
+.welcome-logo {
+  width: fit-content;
+  margin: auto;
+  font-size: 45px !important;
+  font-weight: bold;
+  @media screen and (max-width: 800px) {
+    font-size: 8vw !important;
+  }
+}
+
+.welcome-img-logo-wrapper {
+  width: fit-content;
+  margin: auto;
+}
+
+.welcome-img-logo {
+  width: 21rem;
+  @media screen and (max-width: 800px) {
+    width: 18rem;
+  }
+}
+
+.patient-option-div {
+  background-color: black;
+  margin-top: 0.7rem;
+  height: 3.4vh;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.patient-option {
+  margin: auto;
+  width: fit-content;
+  color: white;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+
+.patient-option-larger-info {
+  margin: auto;
+  width: fit-content;
+  color: white;
+  font-size: 17px;
+  transition: all 0.3s;
+  @media screen and (max-width: 800px) {
+    font-size: 3.5vw !important;
+  }
+}
+
+.patient-option-div:hover {
+  background-color: white;
+
+  .patient-option {
+    color: black;
+  }
+}
+
+.profile-wrapper-header {
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.patient-wrapper-header {
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-wrapper-info {
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.4rem;
+  font-size: 16px;
+}

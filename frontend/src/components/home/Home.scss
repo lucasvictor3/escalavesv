@@ -1,0 +1,66 @@
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.home-menu {
+  background-color: #5eabb3;
+  height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @media screen and (max-width: 800px) {
+    height: 200%;
+  }
+}
+
+.menu-option {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.home-logo {
+  margin: auto;
+}
+
+.home-logo-subtitle {
+  margin: auto;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+.send-button-home {
+  font-size: 16px;
+}
+.register-button-home {
+  width: fit-content;
+  height: 3rem;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 800px) {
+    margin-top: 2rem;
+  }
+}
+
+.menu-option:hover {
+  color: rgb(10, 99, 155);
+}
+
+.modal-main-text {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.modal-content {
+  width: 70vw;
+  display: contents;
+}
+
+.email-sent-label {
+  font-size: 14px;
+  color: green;
+}

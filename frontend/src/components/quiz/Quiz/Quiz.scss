@@ -1,0 +1,137 @@
+.quiz-wrapper-question {
+  background-color: white;
+  width: 80vw;
+  margin: auto;
+  height: 80vh;
+  margin-top: 8vh !important;
+  border-radius: 10px;
+  @media screen and (max-width: 800px) {
+    width: 95vw;
+    height: 80vh;
+    margin-top: 6vh !important;
+  }
+}
+
+.quiz-question {
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  color: black;
+  @media screen and (max-width: 800px) {
+    width: fit-content;
+  }
+}
+
+.quiz-question-nav-buttons-wrapper {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4vh;
+}
+
+.nav-quiz-button {
+  font-size: 17px;
+  border-radius: 30px;
+}
+
+.reaction-image {
+  height: 18vw;
+  width: auto;
+  @media screen and (max-width: 800px) {
+    height: 14rem;
+  }
+}
+
+.reaction-image-wrapper {
+  margin: auto;
+  width: max-content;
+}
+
+.reaction-image-subtitle {
+  width: fit-content;
+  margin: auto;
+  font-size: 19px;
+  margin-top: -2.5rem;
+  @media screen and (max-width: 800px) {
+    font-size: 4vw;
+  }
+}
+
+.quiz-question-wrapper {
+  background-color: rgb(251, 178, 163);
+  border-radius: 3vw;
+  display: inline-block;
+  width: 98%;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  @media screen and (max-width: 800px) {
+    width: 91vw;
+  }
+}
+
+.training-header {
+  width: fit-content;
+  margin: auto;
+  font-size: 2rem;
+  margin-top: 12px;
+}
+
+.ending-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ending-header {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  margin-top: 1%;
+  font-size: 3rem;
+}
+
+.ending-header-check {
+  font-size: 3rem;
+}
+
+.ending-header-subtitle-wrapper {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.ending-header-subtitle {
+  margin: auto;
+  width: fit-content;
+  font-size: 1.6rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
+
+.finish-button-wrapper {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  @media screen and (max-width: 800px) {
+    margin-top: 6rem;
+  }
+}
+
+.finish-logo {
+  width: 12rem;
+}
+
+.finish-logo-wrapper {
+  width: fit-content;
+  margin: auto;
+}
+
+.finish-training-label-msg {
+  margin: auto;
+  width: fit-content;
+  font-size: 18px;
+  color: green;
+  margin-top: 1rem;
+}

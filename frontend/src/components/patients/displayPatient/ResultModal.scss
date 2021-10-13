@@ -1,0 +1,44 @@
+.list-questions-and-number {
+  border: 3px gray;
+  border-style: solid;
+  padding: 1rem;
+  width: 4rem;
+}
+
+.list-questions-and-number.upper {
+  border-bottom: 0px gray;
+  border-bottom-style: unset !important;
+}
+
+.list-questions-and-number.lower {
+  margin-top: -2px;
+}
+
+.list-questions-and-number-wrapper {
+  cursor: pointer;
+  margin-right: 0.1rem;
+  transition: 0.3s all;
+}
+
+.list-questions-and-number-wrapper:hover {
+  background-color: rgb(151, 151, 170);
+}
+
+.list-questions-and-number-wrapper.selected {
+  background-color: rgb(196, 218, 214);
+  color: rgb(27, 88, 132);
+}
+
+.list-results-display {
+  display: flex;
+  overflow-x: auto;
+  width: auto;
+}
+
+.result-modal-main {
+  width: 100%;
+}
+
+.result-bottom-label {
+  margin-top: 1rem;
+}

@@ -1,0 +1,38 @@
+.register-patient-header-wrapper {
+}
+
+.register-patient-header {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2.4rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1.8rem;
+  }
+}
+
+.register-patient-subheader {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.8rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+}
+
+.register-patient-body-wrapper {
+  width: 50vw;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.buttons-register-patient-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3vh;
+}

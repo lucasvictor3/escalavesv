@@ -1,0 +1,58 @@
+.result-evaluation-item {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  transition: all 0.7s !important;
+  color: black;
+}
+
+.viewpatient-header {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2.4rem;
+  @media screen and (max-width: 800px) {
+    font-size: 5.5vw;
+  }
+}
+
+.result-evaluation-item:hover {
+  color: darkblue;
+}
+
+.result-modal .ant-modal-content {
+  width: 80vw;
+  @media screen and (max-width: 800px) {
+    width: 94vw;
+  }
+}
+
+.result-modal {
+  margin-left: 10vw;
+  @media screen and (max-width: 800px) {
+    margin-left: 3vw;
+  }
+}
+
+.buttons-bottom-wraper-editpat {
+  @media screen and (max-width: 800px) {
+    padding-bottom: 4vh;
+  }
+}
+
+.delete-patient-icon {
+  font-size: 2rem;
+  color: rgb(216, 117, 117);
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.delete-patient-icon:hover {
+  color: rgb(238, 79, 79);
+}
+
+.buttons-popoverdelete-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}

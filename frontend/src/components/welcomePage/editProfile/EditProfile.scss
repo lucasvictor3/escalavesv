@@ -1,0 +1,36 @@
+.inner-form-edit {
+  width: 40vw;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+.edit-wrapper-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-profile-button {
+  font-size: 18px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.select-input {
+  width: 40vw;
+  margin-top: 0.5rem;
+}
+
+.editprofile-logo {
+  margin-top: 5% !important;
+  width: fit-content;
+  margin: auto;
+  font-size: 32px !important;
+  font-weight: bold;
+}
+
+.select-uf {
+  margin-left: 10vw !important;
+}

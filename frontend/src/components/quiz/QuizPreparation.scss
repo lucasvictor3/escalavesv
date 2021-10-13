@@ -1,0 +1,63 @@
+.name-search-box {
+  display: flex;
+  align-items: center;
+}
+
+.instrument-wrapper {
+  width: 70vw;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    width: 90vw;
+    margin-top: 3vh;
+  }
+}
+
+.search-by-name-button {
+  margin-top: 5px;
+}
+
+.bottom-buttons-wrapper {
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.back-instrument-button {
+  border-radius: 18px;
+}
+
+.start-instrument-button {
+  border-radius: 18px;
+}
+
+.select-pacient-instrument-preparation {
+  margin: auto;
+}
+
+.instrument-wrapper-header {
+  font-size: 24px;
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 4vh;
+  @media screen and (max-width: 800px) {
+    font-size: 6vw;
+  }
+}
+
+.instructions-img {
+  margin-top: 3vh;
+  width: 43rem;
+  height: auto !important;
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+  }
+}
+
+.instructions-img-wrapper {
+  margin-top: 1vh;
+  width: fit-content !important;
+  margin: auto;
+}
