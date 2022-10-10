@@ -222,6 +222,16 @@ class UserService {
       headers: { Authorization: `Bearer ${this.idToken}` },
     });
   };
+
+  getNegativeQuestionsIds = async () => {
+    if (this.user !== null) {
+      this.idToken = await this.user.getIdToken(true);
+    }
+
+    return await axios.get(`${SERVER_URL}/evaluations/getNegativeQuestions`, {
+      headers: { Authorization: `Bearer ${this.idToken}` },
+    });
+  };
 }
 
 export default UserService;

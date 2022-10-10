@@ -52,6 +52,7 @@ const Quiz: React.FunctionComponent<
   const [imageSubtitle, setImageSubtitle] = React.useState(
     translateEmojiMap[sliderStep]
   );
+  const [negativeQuestionsIds, setNegativeQuestionsIds] = React.useState<Array<number> | null>(null);
   const [imageReaction, setImageReaction] = React.useState(
     translateEmojiMapImageReaction[sliderStep]
   );
@@ -123,8 +124,15 @@ const Quiz: React.FunctionComponent<
       history.push('/quiz-preparation');
     }
 
+    const userService = new UserService(currentUser);
+
+    userService.getNegativeQuestionsIds().then((res: AxiosResponse<Array<number>>) => {
+      console.log(777, res.data)
+      setNegativeQuestionsIds(res.data)
+    })
+
     setSelectedPatientId(location.state.patientId);
-    new UserService(currentUser)
+    userService
       .registerNewEvaluation(currentUser.uid, location.state.patientId)
       .then((response: AxiosResponse<IEvaluation>) => {
         setCurrenEvaluation(response.data);
